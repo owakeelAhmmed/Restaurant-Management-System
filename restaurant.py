@@ -49,7 +49,7 @@ class Order:
             del self.items[item]
     @property
     def total_price(self):
-        return sum(item.price * quantity for item, quantity in self.items.items())
+        return sum(item.price * quantity for item, quantity in self.items.items()) 
     
     def clear(self):
         self.items = {}
@@ -122,7 +122,7 @@ class Menu:
             print("Item Not Found")
 
     def show_menu(self):
-        print("*********Menu*********")
+        print("********* Menu *********")
         print("Name\tPrice\tQuantity")
         for item in self.items:
             print(f"{item.name}\t{item.price}\t{item.quantity}")
